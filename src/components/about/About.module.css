@@ -1,54 +1,129 @@
 .about {
-  background-color: var(--dark-color);
-  padding: var(--side-padding);
+position: relative;
+
 }
-.about .grid {
-  background: linear-gradient(
-    45deg,
-    var(--gray-color) 0%,
-    var(--gray-color) 60%,
-    var(--light-color) 60%,
-    var(--light-color) 100%
-  );
+/* .parallax{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform-style: preserve-3d;
+  z-index: -1;
+} */
+.parallax h1{
+  color: white;
+  font-size: 7rem;
+  position: relative;
+  top: 20%;
+
+  }
+.about .content{
+padding: 100px 0px;
+}
+/* About me section start*/
+.aboutMe{
+  position: relative;
+  padding: 100px 0px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
+  gap: 80px;
+  background-image: url("../../assets/layer1.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
 }
-.about .grid .content {
-  width: 60%;
-  padding: var(--side-padding);
-  color: var(--light-color);
+.aboutMe::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 1;
 }
-.about .grid .content h1 {
-  color: var(--light-color);
-  font-size: 40px;
-  font-weight: bold;
-  letter-spacing: 5px;
-  text-transform: capitalize;
-  background: linear-gradient(
-    to right,
-    var(--light-color) 0,
-    var(--white-color) 10%,
-    var(--light-color) 20%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 2s infinite linear;
-  margin-bottom: 20px;
+.aboutMe .profile{
+  position: relative;
+  max-width: 400px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
 }
-.about .grid .content p {
-  line-height: 1.5;
-  font-size: 18px;
+.aboutMe .profile::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-image: url("../../assets/wave.png");
+  width: 400px;
+  height:400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  z-index: 1;
+  animation: rotate 10s ease infinite;
 }
-.about .grid .image {
-  width: 40%;
-  padding: var(--side-padding);
+.aboutMe .profile img{
+  width: 300px;
+  position: relative;
+  z-index: 2;
 }
-.about .grid .image img {
-  width: 60%;
+.aboutMe .text {
+  max-width: 400px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.aboutMe .text h1 {
+    color: var(--light-color);
+    margin-bottom: 20px;
+    text-transform:capitalize ;
+      font-family: var(--title-font);
+  font-size: var(--title-size);
+}
+.aboutMe .text button{
+  background-color: var(--light-color);
+  padding: 15px 30px;
+  color: var(--dark-color);
   display: block;
-  margin-left: auto;
+  width: max-content;
+  border: 1px solid var(--light-color);
+  transition:all 0.3s;
+  border: 1px solid transparent;
+   font-family: var(--title-font);
+  font-size: 1rem;
+  cursor: pointer;
 }
+.aboutMe .text button:hover{
+  border: 1px solid var(--white-color);
+  background-color: var(--gray-color);
+  color:white;
+  box-shadow: ;
+}
+
+@keyframes rotate {
+  from {
+      transform: translate(-50%,-50%) rotate(0deg);
+  }
+  to {
+      transform: translate(-50%,-50%) rotate(360deg);
+  }
+}
+
+
+
+
 @keyframes shine {
   0% {
     background-position: 0px;

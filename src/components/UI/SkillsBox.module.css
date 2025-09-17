@@ -1,0 +1,17 @@
+.skills{
+    padding: 30px;
+    /* background-color: var(--gray-color) */
+    border: 2px solid var(--light-color);
+    transition: 0.4s;
+}
+.skills:hover{
+    padding: 30px;
+    background-color: var(--dBlue-color)
+
+    
+}
+.skills h4{
+    margin: 0px 0px 20px;
+    color: var(--gray-color);
+}
+.skills .content{}
