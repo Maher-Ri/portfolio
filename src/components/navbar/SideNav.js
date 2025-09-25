@@ -26,9 +26,9 @@ const SideNav = () => {
       <div className={open ? [classes.links,classes.open].join(' ') : [classes.links,classes.close].join(' ')}>
         <a href="#home">home</a>
         <a href="#about">about</a>
-        <a href="">services</a>
-        <a href="">projects</a>
-        <a href="">contact</a>
+        <a href="#about">services</a>
+        <a href="#about">projects</a>
+        <a href="#about">contact</a>
       </div>
     </>
   );

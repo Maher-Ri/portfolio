@@ -1,5 +1,5 @@
 import classes from "./Skills.module.css";
-import Container from "../UI/Container";
+// import Container from "../UI/Container";
 import SkillsBox from "../UI/SkillsBox";
 const Skills = () => {
   return (

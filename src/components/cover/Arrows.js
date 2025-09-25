@@ -2,7 +2,7 @@ import classes from "./Cover.module.css";
 const Arrows = () => {
   const items = new Array(100).fill(null);
   return (
-    <ul>
+    <ul >
       {items.map((item, index) => {
         let x = Math.floor(Math.random() * window.innerWidth);
         let y = Math.floor(Math.random() * 100);
@@ -11,7 +11,7 @@ const Arrows = () => {
         let styles = {
           left: `${x}px`,
           top: `${y}%`,
-          fontSize: `calc(${size}rem + 16px)`,
+          fontSize: `calc(${size}rem + 1rem)`,
           animationDuration: `${duration}s`,
         };
         return (
@@ -28,13 +28,3 @@ const Arrows = () => {
   );
 };
 export default Arrows;
-
-//     arrow.style.left=x+'px'
-//     arrow.style.top=y+'px'
-//     arrow.style.fontSize=size+'px'}
-//   const showArrows=()=>{
-//    let count = 10;
-//    let cover=document.getElementById('parent')
-//    for (let i = 0;i < count;i++) {
-//         return(<li>t</li>)
-//    }}

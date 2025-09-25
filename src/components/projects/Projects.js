@@ -1,5 +1,5 @@
 import Container from "../UI/Container";
-import classes from "./Projects.module.css";
+// import classes from "./Projects.module.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import SingleProject from "./SingleProject";
