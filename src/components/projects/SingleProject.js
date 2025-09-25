@@ -1,16 +1,52 @@
-import classes from "./Projects.module.css";
+import classes from "./SingleProject.module.css";
+import github from "../../assets/github.png"
 const SingleProject = (props) => {
   return (
-    <div className={classes.projectBox}>
-      <div className={classes.details}>
-        <div className={classes.image}>
-        <img src={props.project.image} alt={props.project.name} />
-        </div>
-        <h2>{props.project.name}</h2>
-        <p>{props.project.description}</p>
+    <article className={classes.card}>
+      <div className={classes.imageWrapper}>
+        <img
+          src={props.project.image}
+          alt={props.project.name}
+          loading="lazy"
+        />
       </div>
-      <a href={props.project.link}>View Project</a>
-    </div>
+
+      <div className={classes.cardBody}>
+        <h3 className={classes.cardTitle}>{props.project.title}</h3>
+        <p className={classes.cardDesc}>{props.project.desc}</p>
+        <div className={classes.techRow}>
+          {props.project.tech.map((t) => (
+            <span key={t} className={classes.techBadge}>
+              {t}
+            </span>
+          ))}
+        </div>
+
+        <p className={classes.impact}>
+          <strong>Impact:</strong> {props.project.impact}
+        </p>
+
+        <div className={classes.links}>
+          
+          <a
+            href={props.project.demo}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={classes.linkButton}
+          >
+            Live Demo
+          </a>
+          <a
+            href={props.project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={classes.gitButton}
+          >
+            <img src={github} alt="github" width={36}/>
+          </a>
+        </div>
+      </div>
+    </article>
   );
 };
 export default SingleProject;

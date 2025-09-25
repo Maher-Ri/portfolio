@@ -1,5 +1,8 @@
 import React, { useState } from "react";
-
+import SingleProject from "./SingleProject";
+import projects from "../../Data/ProjectsData";
+import classes from "./Projects.module.css"
+import Container from "../UI/Container"
 const ProjectsTabs = () => {
   const [activeTab, setActiveTab] = useState("react");
 
@@ -10,7 +13,7 @@ const ProjectsTabs = () => {
   ];
 
   return (
-    <div style={{ padding: "40px", fontFamily: "Arial, sans-serif" }}>
+    <Container>
       {/* Tabs Navigation */}
       <div style={{ display: "flex", justifyContent: "center", marginBottom: "20px" }}>
         {tabs.map((tab) => (
@@ -35,37 +38,18 @@ const ProjectsTabs = () => {
       </div>
 
       {/* Tabs Content */}
-      <div style={{ textAlign: "center" }}>
-        {activeTab === "react" && (
-          <div>
+      {activeTab === "react" && (
+        <div className={classes.webProjects}>
             <h2>React Projects</h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "20px", marginTop: "20px" }}>
-              {[1, 2, 3, 4].map((id) => (
-                <div
-                  key={id}
-                  style={{
-                    background: "#fff",
-                    border: "1px solid #ddd",
-                    borderRadius: "10px",
-                    padding: "15px",
-                    boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
-                  }}
-                >
-                  <img
-                    src={`https://picsum.photos/400/200?random=${id}`}
-                    alt={`React Project ${id}`}
-                    style={{ width: "100%", borderRadius: "8px" }}
-                  />
-                  <h3 style={{ margin: "10px 0" }}>React Project {id}</h3>
-                  <p>Short description of the project, tech stack, and features.</p>
-                  <a href="#" target="_blank" rel="noreferrer" style={{ color: "#007bff", fontWeight: "bold" }}>View Demo</a>
-                </div>
+            <div className={classes.grid}>
+              {projects.map((p) => (
+                <SingleProject key={p.id} project={p}/>
               ))}
             </div>
-          </div>
+        </div>
         )}
 
-        {activeTab === "emailers" && (
+        {/* {activeTab === "emailers" && (
           <div>
             <h2>Email Templates</h2>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "20px", justifyContent: "center", marginTop: "20px" }}>
@@ -86,7 +70,7 @@ const ProjectsTabs = () => {
         )}
 
         {activeTab === "banners" && (
-          <div>
+          <section>
             <h2>Animated Banners</h2>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "20px", justifyContent: "center", marginTop: "20px" }}>
               {[1, 2].map((id) => (
@@ -98,10 +82,10 @@ const ProjectsTabs = () => {
                 </div>
               ))}
             </div>
-          </div>
-        )}
-      </div>
-    </div>
+          </section>
+        )} */}
+      </Container>
+    // </div>
   );
 };
 
