@@ -1,7 +1,10 @@
+.projects{
+  padding: var(--section-padding);
+}
 .tabNav {
   display: flex;
   justify-content: center;
-  padding-top: 100px;
+  padding: 10px 0px 60px;
   gap: 3rem;
 }
 .tabNav .tabButton {
@@ -20,7 +23,7 @@
   transition: all 0.3s;
   background-color: var(--light-color);
   color: var(--dark-color);
-  box-shadow: 0 6px 14px rgba(255, 255, 255, 0.25);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.2);
 }
 .webProjects {
 }

@@ -1,5 +1,5 @@
 .emailsContainer {
-  /* text-align: center; */
+  text-align: center;
 }
 
 .emailsTitle {
@@ -9,16 +9,19 @@
 }
 
 .emailsIntro {
-  margin-bottom: 2rem;
+  width: 90%;
+  margin: 0px auto 2rem;
   color: var(--white-color);
   font-size: 1rem;
   line-height: 1.6;
+  animation: cardIn ease-in-out 1s;
 }
 
 .emailsGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
+  animation: cardIn ease-in-out 1s;
 }
 
 .emailCard {
@@ -27,10 +30,11 @@
   padding: 6px 6px 16px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
+  animation: cardIn ease-in-out 1s;
 }
 
 .emailCard:hover {
-  box-shadow: 0 6px 14px rgba(255, 255, 255, 0.25);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.25);
 }
 
 .emailIimageWrapper {
@@ -73,14 +77,27 @@
 .emailCard:hover .emailLink::before {
   width: 100%;
 }
+.emailCard:hover .emailLink > a{
+  color: white;
+}
 .emailLink > a {
   position: relative;
   display: block;
   color: var(--lblue-color);
-  transition: color 0.3s ease;
-  padding: 8px 12px;
+  transition: color 0.5s ease;
+  padding: 10px 12px;
   font-weight: 700;
   font-size: 0.9rem;
   z-index: 2;
-  background-color: var(--white-color);
+  background-color: transparent;
+}
+@keyframes cardIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px) ;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }

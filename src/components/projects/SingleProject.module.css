@@ -4,9 +4,8 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  transform: translateY(0);
-  transition: all 300ms;
-  cursor: default;
+  transition: all 0.3s;
+  animation: cardIn ease-in-out 1s;
 }
 .imageWrapper {
   overflow: hidden;
@@ -14,7 +13,15 @@
 }
 .imageWrapper img {
   width: 100%;
+  transition: 0.3s;
 }
+.card:hover{
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.25);
+    transform: translateY(6px);
+}
+/* .card:hover .imageWrapper img{
+  transform: scale(1.1) ;
+} */
 .cardBody {
   padding: 0 16px 16px;
   display: flex;
@@ -40,7 +47,7 @@
   font-size: 0.7rem;
   padding: 6px 8px;
   background: var(--lblue-color);
-  color: var(--dark-color);
+  color: var(--white-color);
   font-weight: 600;
 }
 .impact {
@@ -61,7 +68,7 @@
   vertical-align: middle;
 }
 .linkButton {
-  padding: 8px 12px;
+  padding: 10px 12px;
   text-decoration: none;
   background: var(--light-color);
   color: var(--dark-color);
@@ -70,9 +77,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
+  /* border: 2px solid var(--light-color); */
+  transition: all 0.3s;
 }
-
+.linkButton:hover{
+ /* border-color: var(--dark-color); */
+}
 @keyframes shimmer {
   0% {
     background-position: -200% 0;
@@ -100,7 +111,7 @@
 @keyframes cardIn {
   from {
     opacity: 0;
-    transform: translateY(10px) scale(0.996);
+    transform: translateY(15px) ;
   }
   to {
     opacity: 1;

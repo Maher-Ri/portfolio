@@ -13,7 +13,7 @@ const EmailersTab = () => {
   return (
     <div className={classes.emailsContainer}>
       {/* Shared Intro */}
-      <h2 className={classes.emailsTitle}>Email Templates</h2>
+      {/* <h2 className={classes.emailsTitle}>Email Templates</h2> */}
       <p className={classes.emailsIntro}>
         I create responsive HTML email templates optimized for a maximum width of 640px, ensuring they render seamlessly across the majority of email clients. Each design is mobile-friendly, with adaptive layouts that support both light and dark modes for enhanced accessibility.
         <br/><br/>
