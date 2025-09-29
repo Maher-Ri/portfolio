@@ -1,3 +1,27 @@
+.tabNav {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  gap: 3rem;
+}
+.tabNav .tabButton {
+  border: none;
+  background-color: transparent;
+  font-size: 1.25rem;
+  padding: 12px 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: var(--white-color);
+  font-weight: 600;
+  width: 140px;
+  border: 2px solid var(--light-color);
+}
+.tabNav .activeButton {
+  transition: all 0.3s;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  box-shadow: 0 6px 14px rgba(255, 255, 255, 0.25);
+}
 .webProjects {
 }
 .grid {
