@@ -1,9 +1,13 @@
-.webProjects{
-
+.webProjects {
 }
 .grid {
-display: grid;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
   align-items: stretch;
+}
+.webProjects > h2 {
+  color: var(--light-color);
+  font-size: var(--subTitle-size);
+  margin-bottom: 2rem;
 }

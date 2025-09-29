@@ -34,7 +34,8 @@ const SingleProject = (props) => {
             rel="noopener noreferrer"
             className={classes.linkButton}
           >
-            Live Demo
+            Live Demo 
+            <img src="https://cdn-icons-png.flaticon.com/512/0/375.png" alt="" width={16} />
           </a>
           <a
             href={props.project.github}

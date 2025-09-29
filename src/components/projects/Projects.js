@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SingleProject from "./SingleProject";
 import projects from "../../Data/ProjectsData";
+import EmailersTab from "./EmailersTab";
 import classes from "./Projects.module.css"
 import Container from "../UI/Container"
 const ProjectsTabs = () => {
@@ -40,7 +41,7 @@ const ProjectsTabs = () => {
       {/* Tabs Content */}
       {activeTab === "react" && (
         <div className={classes.webProjects}>
-            <h2>React Projects</h2>
+            <h2>WEB Projects</h2>
             <div className={classes.grid}>
               {projects.map((p) => (
                 <SingleProject key={p.id} project={p}/>
@@ -49,24 +50,8 @@ const ProjectsTabs = () => {
         </div>
         )}
 
-        {/* {activeTab === "emailers" && (
-          <div>
-            <h2>Email Templates</h2>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "20px", justifyContent: "center", marginTop: "20px" }}>
-              {[1, 2].map((id) => (
-                <div key={id} style={{ width: "300px", textAlign: "center" }}>
-                  <img
-                    src={`https://via.placeholder.com/300x500?text=Email+${id}`}
-                    alt={`Email Template ${id}`}
-                    style={{ width: "100%", borderRadius: "8px", border: "1px solid #ccc" }}
-                  />
-                  <a href="#" target="_blank" rel="noreferrer" style={{ display: "block", marginTop: "10px", color: "#007bff" }}>
-                    View Full Template
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
+        {activeTab === "emailers" && (
+<EmailersTab/>
         )}
 
         {activeTab === "banners" && (
@@ -83,7 +68,7 @@ const ProjectsTabs = () => {
               ))}
             </div>
           </section>
-        )} */}
+        )}
       </Container>
     // </div>
   );
