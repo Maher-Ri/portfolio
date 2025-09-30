@@ -1,0 +1,70 @@
+.demo {
+  background: var(--dark-color);
+  color: var(--dark-color);
+}
+
+
+.category {
+  margin-bottom: 2.5rem;
+  border-left: 4px solid var(--lblue-color);
+  padding-left: 1.5rem;
+}
+
+.catTitle {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--lblue-color);
+}
+
+.skillGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.2rem;
+}
+
+.skillCard {
+  background: var(--light-color);
+  padding: 1.2rem 0.8rem;
+  /* border-radius: 12px; */
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  font-size: 0.9rem;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+  transform: translateY(20px);
+  color:var(--dark-color);
+}
+
+.skillCard:hover {
+  transform: translateY(-6px) scale(1.02);
+  background: var(--lblue-color);
+  color: var(--white-color);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.15);
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.icon {
+  font-size: 1.6rem;
+}
+
+.level {
+  margin-top: 0.6rem;
+  font-weight: 700;
+  color: var(--dBlue-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skillGrid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+}
