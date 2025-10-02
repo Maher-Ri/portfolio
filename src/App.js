@@ -4,6 +4,8 @@ import Navbar from './components/navbar/Navbar';
 import SideNav from './components/navbar/SideNav';
 import Projects from './components/projects/Projects';
 import SkillsSection from './components/skills/SkillsSection';
+import ContactSection from './components/contact/ContactSection'
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -12,8 +14,10 @@ function App() {
       <SideNav/>
       <Cover/>
       <About/>
-      <Projects/>
       <SkillsSection/>
+      <Projects/>
+      <ContactSection/>
+      <Footer/>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 .projects{
-  padding: var(--section-padding);
+  /* padding: var(--section-padding); */
 }
 .tabNav {
   display: flex;

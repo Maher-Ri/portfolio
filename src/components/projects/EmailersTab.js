@@ -25,7 +25,7 @@ const EmailersTab = () => {
         {emails.map((email) => (
           <div key={email.id} className={classes.emailCard}>
             <div className={classes.emailImageWrapper}>
-              <img src={email.img} alt={email.title} className={classes.emailImg} />
+              <img src={email.img} alt={email.title} className={classes.emailImg} loading="lazy"/>
             </div>
             <h3 className={classes.emailTitle}>{email.title}</h3>
             <div className={classes.emailLink}>
