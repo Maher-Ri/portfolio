@@ -1,15 +1,16 @@
 .card {
-  background: #444;
+  /* background: #444; */
   overflow: hidden;
   display: flex;
   flex-direction: column;
   gap: 8px;
+   border: 2px solid #444;
   transition: all 0.3s;
   animation: cardIn ease-in-out 1s;
 }
 .imageWrapper {
   overflow: hidden;
-  border: 2px solid #444;
+  /* border: 2px solid #444; */
 }
 .imageWrapper img {
   width: 100%;

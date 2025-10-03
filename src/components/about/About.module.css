@@ -1,40 +1,11 @@
 .about {
   position: relative;
-}
-/* .parallax{
-  position: relative;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transform-style: preserve-3d;
-  z-index: -1;
-} */
-.parallax h1 {
-  color: white;
-  font-size: 7rem;
-  position: relative;
-  top: 20%;
-}
-.about .content {
-  padding: 100px 0px;
-}
-/* About me section start*/
-.aboutMe {
-  position: relative;
-  padding: 100px 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 80px;
-  background-image: url("../../assets/layer1.jpg");
+    background-image: url("../../assets/layer1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.aboutMe::after {
+.about::after {
   content: "";
   position: absolute;
   top: 0;
@@ -44,6 +15,17 @@
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1;
 }
+/* About me section start*/
+.aboutMe {
+  padding: var(--section-padding);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+
+}
+
 .aboutMe .profile {
   position: relative;
   max-width: 400px;
@@ -124,58 +106,36 @@
   }
 }
 
-@keyframes shine {
-  0% {
-    background-position: 0px;
-  }
-  100% {
-    background-position: 300px;
-  }
-}
 @media (max-width: 992px) {
+  .aboutMe {
+    flex-direction: column;
+    gap: 5rem;
+  }
   .about {
     text-align: center;
   }
-  .about .grid {
-    background: linear-gradient(
-      200deg,
-      var(--gray-color) 0%,
-      var(--gray-color) 70%,
-      var(--light-color) 70%,
-      var(--light-color) 100%
-    );
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .aboutMe .profile {
+    max-width: 275px;
   }
-  .about .grid .content {
-    width: 90%;
+  .aboutMe .profile::before {
+    width: 275px;
+    height: 275px;
   }
-  .about .grid .image img {
-    width: 100%;
-    margin-left: initial;
+  .aboutMe .profile img {
+    width: 190px;
+  }
+  .aboutMe .text .skills {
+    justify-content: center;
+  }
+  .aboutMe .text button {
+    margin: auto;
+    padding: 10px 20px;
   }
 }
 @media (max-width: 768px) {
-  .about .grid .image {
-    width: 60%;
-  }
-  .about .grid .content h1 {
-    font-size: 30px;
-  }
-  .about .grid .content p {
-    font-size: 16px;
+  .aboutMe .text {
+    max-width: 100%;
   }
 }
 @media (max-width: 576px) {
-  .about .grid .content {
-    width: 100%;
-  }
-  .about .grid .image {
-    width: 80%;
-  }
-  .about .grid .content h1 {
-    font-size: 18ox;
-    font-weight: bold;
-  }
 }

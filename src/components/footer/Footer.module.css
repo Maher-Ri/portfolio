@@ -20,7 +20,7 @@
 }
 
 .social a:hover {
-  color: var(--lblue-color);
+  color: var(--light-color);
   transform: scale(1.2);
 }
 

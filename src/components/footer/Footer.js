@@ -1,9 +1,11 @@
 import React from "react";
 import classes from "./Footer.module.css";
 import { FaGithub, FaLinkedin, FaPhone, FaEnvelope } from "react-icons/fa";
+import Container from "../UI/Container";
 
 const Footer = () => {
   return (
+    <Container>
     <footer className={classes.footer}>
       <div className={classes.social}>
         <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
@@ -23,6 +25,7 @@ const Footer = () => {
         © {new Date().getFullYear()} Maher Al Rifai. Designed & coded by me.
       </div>
     </footer>
+    </Container>
   );
 };
 
