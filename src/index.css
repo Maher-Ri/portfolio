@@ -10,15 +10,18 @@
   --gray-color: #636565;
   --lblue-color: #5884a7;
   --light-color: #9ac2c1;
-  --side-padding: 70px;
+  --side-padding: 5.2rem;
   --title-font: "MyFont", sans-serif;
   --title-size: 2.5rem;
   --subTitle-size:1.5rem;
-  --section-padding: 100px 0px;
+  --section-padding: 6.25rem 0px;
 }
 * {
   box-sizing: border-box;
   margin: 0;
+}
+html{
+  scroll-behavior: smooth;
 }
 body {
   margin: 0 auto;
@@ -47,18 +50,20 @@ p {
 
 @media (max-width:992px){
   :root {
-    --side-padding: 50px;
+    --side-padding: 3.5rem;
+    --title-size: 2rem;
+      --section-padding: 5rem 0px;
   }
 }
 @media (max-width:768px){
   :root {
-    --side-padding: 30px;
-    --title-size: 30px;
+    --side-padding: 2rem;
+      --section-padding: 4rem 0px;
   }
 }
 @media (max-width:576px){
   :root {
-    --side-padding: 15px;
-    --title-size: 22px;
+    --side-padding: 5%;
+    --title-size: 1.6rem;
   }
 }

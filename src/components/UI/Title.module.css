@@ -3,4 +3,10 @@
     margin-bottom: 2.5rem;
     text-transform:capitalize ;
     text-align: center;
+    font-size: var(--title-size);
+}
+@media (max-width:768px){
+.title{
+    margin-bottom: 2rem;
+  }
 }

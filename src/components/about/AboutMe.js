@@ -6,7 +6,7 @@ const AboutMe = () => {
     <Container>
     <articale className={classes.aboutMe}>
       <div className={classes.text}>
-        <h1>About Me</h1>
+        <h1>Who am I?</h1>
         <h2>Hi, I'm Maher</h2>
         <p>
           I'm a passionate Front-End Developer with 2 years of experience in

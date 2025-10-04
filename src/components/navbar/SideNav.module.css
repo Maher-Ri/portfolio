@@ -1,6 +1,5 @@
 .navbar {
   display: none;
-  border-bottom: 1px solid var(--gray-color);
 }
 .navbar .logo img {
   width: 120px;
@@ -12,18 +11,18 @@
   cursor: pointer;
 }
 .links {
-  position: absolute;
+  position: fixed;
   z-index: 9;
-  height: calc(100vh - 70px);
-  width: 60%;
+  height: 100vh;
+  width: 75%;
   left: 0;
-  top: 70px;
+  top: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
   background-color: var(--dark-color);
-  padding: 50px var(--side-padding);
+  padding: 130px var(--side-padding);
   transition: 0.7s;
 }
 .links a {
@@ -34,25 +33,41 @@
   font-weight: 500;
 }
 .close {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  .open {
-    opacity: 1;
-    transform: translateX(0%);
-  }
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.open {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
 @media (max-width: 992px) {
   .navbar {
+    position: fixed;
+    top: 0;
     display: flex;
-    height: 70px;
+    height: 80px;
     background-color: var(--dark-color);
-    position: relative;
     width: 100%;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0px var(--side-padding);
-    z-index: 10;
+    padding: 5px var(--side-padding);
+    z-index: 100;
+  }
+  .sticky {
+    box-shadow: 0 2px 6px rgba(153, 152, 152, 0.2);
+    backdrop-filter: blur(8px);
+    animation: fadeDown 0.8s ease-out;
   }
 }
-
+@keyframes fadeDown {
+  0% {
+    opacity: 0.5;
+    transform: translateY(-90px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

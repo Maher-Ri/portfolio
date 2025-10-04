@@ -6,8 +6,9 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  margin-top: 90px;
 }
-.cover::before{
+.cover::before {
   content: "";
   position: absolute;
   left: 0;
@@ -97,12 +98,12 @@
   display: block;
   width: max-content;
   border: 1px solid var(--light-color);
-  transition:all 0.3s;
+  transition: all 0.3s;
 }
-.cover .content a:hover{
+.cover .content a:hover {
   border: 1px solid var(--white-color);
   background-color: var(--gray-color);
-  color:white;
+  color: white;
   transform: scale(1.05);
 }
 .cover .toRight {
@@ -137,43 +138,62 @@
     opacity: 0;
   }
 }
-@media (max-width:992px){
-  .cover{
-  height: calc(100vh - 70px);
-  }
-}
-@media (max-width:768px){
-  .cover{
+@media (max-width: 992px) {
+  .cover {
+    height: calc(100vh - 80px);
+    margin-top: 80px;
     padding: 50px var(--side-padding);
     flex-direction: column;
     gap: 50px;
-    height: auto;
   }
+  .cover .profile .image {
+    width: 85%;
+    max-width: 300px;
+  }
+  .cover .profile .image::before {
+    width: 50%;
+    height: 50%;
+    top: -15px;
+    left: -15px;
+  }
+  .cover .profile .image::after {
+    width: 50%;
+    height: 50%;
+    bottom: -15px;
+    right: -15px;
+  }
+
   .cover .content {
     color: var(--white-color);
     min-height: initial;
     padding: 10px;
-    width: 400px;
+    width: 500px;
     text-align: center;
   }
   .cover > div {
     width: initial;
   }
-  .cover .content p{
+  .cover .content p {
     margin-bottom: 30px;
   }
   .cover .profile .image,
-  .cover .content a{
+  .cover .content a {
     margin: auto;
   }
 }
-@media (max-width:576px){
-  .cover{
-    height: calc(100vh - 70px);
-    }
+@media (max-width: 768px) {
+  .cover {
+    padding: 50px var(--side-padding);
+  }
+
+  .cover .content {
+    width: 400px;
+  }
+}
+@media (max-width: 576px) {
   .cover .profile .image {
     width: 85%;
-    max-width:300px;
+    max-width: 300px;
   }
   .cover .profile .image::before {
     width: 50%;
@@ -193,11 +213,11 @@
     width: 100%;
     padding: 0px;
   }
-  .cover .content p{
+  .cover .content p {
     margin-bottom: 20px;
     font-size: 16px;
   }
   .cover .content a {
-    padding:15px 10px;
+    padding: 15px 10px;
   }
 }
