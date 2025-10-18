@@ -1,28 +1,28 @@
 .card {
-  /* background: #444; */
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 8px;
-   border: 2px solid #444;
-  transition: all 0.3s;
+  gap: 16px;
+  border: 1px solid #444;
+  transition: all 0.4s;
   animation: cardIn ease-in-out 1s;
 }
 .imageWrapper {
   overflow: hidden;
-  /* border: 2px solid #444; */
 }
 .imageWrapper img {
   width: 100%;
   transition: 0.3s;
+  vertical-align: top;
 }
-.card:hover{
-    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.25);
-    transform: translateY(6px);
+.card:hover {
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.25);
+  transform: translateY(6px);
+  transition: all 0.4s;
 }
-/* .card:hover .imageWrapper img{
-  transform: scale(1.1) ;
-} */
+.card:hover .imageWrapper img {
+  transform: scale(1.05);
+}
 .cardBody {
   padding: 0 16px 16px;
   display: flex;
@@ -31,7 +31,7 @@
   flex-grow: 1;
 }
 .cardTitle {
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   color: var(--white-color);
 }
 .cardDesc {
@@ -62,28 +62,48 @@
   align-items: center;
   justify-content: space-between;
 }
-.gitButton{
-    animation: puls 2s infinite ;
+.gitButton {
+  animation: puls 2s infinite;
 }
 .gitButton img {
   vertical-align: middle;
 }
 .linkButton {
-  padding: 10px 12px;
-  text-decoration: none;
-  background: var(--light-color);
-  color: var(--dark-color);
-  font-weight: 700;
-  font-size: 0.9rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 8px;
-  /* border: 2px solid var(--light-color); */
+  position: relative;
+  padding: 10px 18px;
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 1rem;
+  border: 1px solid var(--light-color);
   transition: all 0.3s;
 }
-.linkButton:hover{
- /* border-color: var(--dark-color); */
+.linkButton span {
+  position: relative;
+  z-index: 2;
+  transition: all 0.4s;
+  color: var(--light-color);
+}
+.linkButton::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background: var(--light-color);
+  z-index: 1;
+  transition: all 0.4s;
+}
+.linkButton:hover span {
+  color: var(--dark-color);
+  transition: all 0.4s;
+}
+.linkButton:hover::before {
+  width: 100%;
+  transition: all 0.4s;
+}
+.linkButton:hover {
+  /* border-color: var(--dark-color); */
 }
 @keyframes shimmer {
   0% {
@@ -104,7 +124,7 @@
     opacity: 1;
     transform: scale(1.1);
   }
-  100%{
+  100% {
     opacity: 0.7;
     transform: scale(0.9);
   }
@@ -112,7 +132,7 @@
 @keyframes cardIn {
   from {
     opacity: 0;
-    transform: translateY(15px) ;
+    transform: translateY(15px);
   }
   to {
     opacity: 1;

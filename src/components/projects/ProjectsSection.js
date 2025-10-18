@@ -4,7 +4,7 @@ import Title from "../UI/Title";
 import SingleProject from "./SingleProject";
 import projects from "../../Data/ProjectsData";
 import EmailersTab from "./EmailersTab";
-import classes from "./Projects.module.css";
+import classes from "./ProjectsSection.module.css";
 import Container from "../UI/Container";
 const ProjectsTabs = () => {
   const [activeTab, setActiveTab] = useState("react");

@@ -1,55 +1,41 @@
-.tabNav {
-  display: flex;
-  justify-content: center;
-  margin: 0px 0px 2rem;
-  gap: 3rem;
-  border-bottom: 1px solid var(--light-color);
-  transition: all 0.3s;
-}
-
-.tabNav .tabButton {
-  border: none;
+.head {
+  position: relative;
   background-color: var(--dark-color);
-  font-size: 1.1rem;
-  padding: 14px 8px;
-  cursor: pointer;
-  /* transition: all 0.3s; */
-  color: var(--white-color);
-  font-weight: 600;
-  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 150px 0 0;
 }
-
-.tabNav .activeButton {
-  transition: color 0.3s;
+.head .content {
+  flex: 1;
+}
+.head .content h1 {
   color: var(--light-color);
-  border: 1px solid var(--light-color);
-  border-bottom: none;
-  transform: translateY(1px);
+  margin-bottom: 2.5rem;
+  text-transform: capitalize;
+  font-size: var(--title-size);
+  font-weight: 500;
 }
-
-.tabNav .tabButton:hover {
+.head .content .desc {
+  font-size: 1.2rem;
+}
+.head .content span {
+  font-size: 0.875rem;
   color: var(--light-color);
 }
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-  align-items: stretch;
+.head .content span svg {
+  vertical-align: middle;
+  font-size: 1rem;
 }
-.webProjects > h2 {
-  color: var(--light-color);
-  font-size: var(--subTitle-size);
-  margin-bottom: 2rem;
+.head .image {
+  flex: 1;
+  text-align: right;
 }
-
+.head .image img {
+  width: 80%;
+}
 @media (max-width: 768px) {
-  .tabNav {
-    gap: initial;
-    justify-content: space-between;
-  }
-  .tabNav .tabButton {
-    font-size: 0.9rem;
-    width: 100px;
+  .head .content h1 {
+    margin-bottom: 2rem;
   }
 }

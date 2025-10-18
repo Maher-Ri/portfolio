@@ -23,7 +23,7 @@ const SingleProject = (props) => {
         </div>
 
         <p className={classes.impact}>
-          <strong>Impact:</strong> {props.project.impact}
+          <strong>Quality:</strong> {props.project.quality}
         </p>
 
         <div className={classes.links}>
@@ -33,9 +33,8 @@ const SingleProject = (props) => {
             target="_blank"
             rel="noopener noreferrer"
             className={classes.linkButton}
-          >
-            Live Demo 
-            <img src="https://cdn-icons-png.flaticon.com/512/0/375.png" alt="" width={17} />
+          ><span>
+            Live Demo &#9658;</span>
           </a>
           <a
             href={props.project.github}

@@ -4,6 +4,7 @@
     text-transform:capitalize ;
     text-align: center;
     font-size: var(--title-size);
+    font-weight: 500;
 }
 @media (max-width:768px){
 .title{

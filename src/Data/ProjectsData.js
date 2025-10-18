@@ -2,6 +2,7 @@ import mpcImage from "../assets/projects/MPC.png";
 import bookImage from "../assets/projects/book.png";
 import shopImage from "../assets/projects/shop.png";
 import quarterImage from "../assets/projects/quarter.png";
+import qrdi from "../assets/projects/qrdi.png";
 // import jawadImage from "../assets/projects/jawad.png";
 
 // const ProjectsData = [
@@ -39,13 +40,23 @@ import quarterImage from "../assets/projects/quarter.png";
 
 // export default ProjectsData;
 const projects = [
-  {
+    {
     id: 1,
+    title: "QRDI Portal",
+    image: qrdi,
+    desc: "A national platform for researchers and innovators to browse thousands of assets.",
+    tech: ["HTML5","CSS3","Bootstrap 5"],
+    quality: "Responsive, clean code, accessible design, and modern front-end implementation.",
+    github: "https://github.com/Maher-Ri/QRDI-PORTAL",
+    demo: "https://maher-ri.github.io/QRDI-PORTAL/"
+  },
+  {
+    id: 6,
     title: "Portfolio Landing",
     image: mpcImage,
     desc: "Responsive portfolio landing page with animated hero and accessible navigation.",
-    tech: ["React", "TypeScript", "CSS"],
-    impact: "Improved LCP by 30% using optimized images & lazy loading.",
+    tech: ["Html", "TypeScript", "CSS"],
+    quality: "Improved LCP by 30% using optimized images & lazy loading.",
     github: "https://github.com/username/portfolio-landing",
     demo: "https://username.github.io/portfolio-landing"
   },
@@ -55,7 +66,7 @@ const projects = [
      image: bookImage,
     desc: "CRUD task manager with offline support and local storage synchronization.",
     tech: ["React", "Vite", "IndexedDB"],
-    impact: "Reduced API calls by 40% using local-first sync strategy.",
+    quality: "Reduced API calls by 40% using local-first sync strategy.",
     github: "https://github.com/username/task-manager",
     demo: "https://username.github.io/task-manager"
   },
@@ -65,7 +76,7 @@ const projects = [
     image: shopImage,
     desc: "Product grid with filter, sort, and accessible keyboard navigation.",
     tech: ["React", "Tailwind", "Framer Motion"],
-    impact: "Improved conversion-ready layout and reduced bundle by 18%.",
+    quality: "Improved conversion-ready layout and reduced bundle by 18%.",
     github: "https://github.com/username/ecommerce-ui",
     demo: "https://username.github.io/ecommerce-ui"
   },
@@ -75,7 +86,7 @@ const projects = [
     image: quarterImage,
     desc: "Admin dashboard with interactive charts and responsive tables.",
     tech: ["React", "Recharts", "SWR"],
-    impact: "Faster dashboard load time by streaming critical data.",
+    quality: "Faster dashboard load time by streaming critical data.",
     github: "https://github.com/username/charts-dashboard",
     demo: "https://username.github.io/charts-dashboard"
   }
