@@ -6,25 +6,21 @@ import Title from "../UI/Title"
 
 const ContactSection = () => {
   return (
-    <Container>
-      <section className={classes.contactSection} id="contact">
+    <Container id="contact">
+      <section className={classes.contactSection} >
         <Title>Get in Touch</Title>
-        <p className={classes.subtitle}>
-          I’m open to freelance or full-time opportunities. Let’s create
-          something great together!
-        </p>
-
         <div className={classes.container}>
-          {/* Contact Form */}
           <form className={classes.form}>
             <input type="text" placeholder="Your Name" required />
             <input type="email" placeholder="Your Email" required />
             <textarea placeholder="Your Message" rows="5" required></textarea>
             <button type="submit">Send Message</button>
           </form>
-
-          {/* Contact Info */}
           <div className={classes.info}>
+                    <p className={classes.subtitle}>
+          I’m open to freelance or full-time opportunities. Let’s create
+          something great together!
+        </p>
             <a href="mailto:your.email@example.com">
               <FaEnvelope /> your.email@example.com
             </a>

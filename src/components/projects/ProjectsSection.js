@@ -16,7 +16,7 @@ const ProjectsTabs = () => {
   ];
 
   return (
-    <section className={classes.projects}>
+    <section className={classes.projects} id="projects">
       <Container>
         <Title>Selected Projects</Title>
         {/* Tabs Navigation */}
@@ -40,7 +40,7 @@ const ProjectsTabs = () => {
           <div className={classes.webProjects}>
             {/* <h2>WEB Projects</h2> */}
             <div className={classes.grid}>
-              {projects.map((p) => (
+              {projects.slice(0, 4).map((p) => (
                 <SingleProject key={p.id} project={p} />
               ))}
             </div>

@@ -33,7 +33,7 @@
   font-weight: 500;
 }
 .sticky {
-  box-shadow: 0 2px 6px rgba(153, 152, 152, 0.2);
+  box-shadow: 0 2px 4px rgba(153, 152, 152, 0.2);
   backdrop-filter: blur(8px);
   animation: fadeDown 0.8s ease-out;
 }

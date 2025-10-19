@@ -3,8 +3,6 @@
   color: var(--dark-color);
   padding: var(--section-padding);
 }
-
-
 .category {
   margin-bottom: 3rem;
   border-left: 4px solid var(--lblue-color);

@@ -1,18 +1,19 @@
 import Arrows from "./Arrows";
 import classes from "./Cover.module.css";
-import myImage from "../../assets/my-Image.jpg"
+import myImage from "../../assets/my-Image.jpg";
+import { NavLink } from "react-router-dom";
 const Cover = () => {
   function handleImageMouseOver() {
     window.getSelection().removeAllRanges();
   }
   return (
-    <div className={classes.cover} id="cover"onMouseOver={handleImageMouseOver}>
+    <div className={classes.cover} id="cover" onMouseOver={handleImageMouseOver}>
       <Arrows />
       <div className={classes.profile}>
         <div className={classes.image}>
           <img 
           src={myImage}
-            alt="maher"
+            alt="Maher Al Rifai"
           />
         </div>
       </div>
@@ -20,7 +21,7 @@ const Cover = () => {
         <div className={classes.content}>
           <h1>Maher Al Rifai</h1>
           <p>Front-end web developer, designer and overall good human. I enjoy working with people who care on projects that make me think.</p>
-        <a href="#projects">view my projects</a>
+        <NavLink to="/projects">view my projects</NavLink>
         </div>
         </div>
     </div>

@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
 import classes from "./Navbar.module.css";
 import Llogo from "../../assets/logo-light.png";
+import { NavLink, useNavigate } from "react-router-dom";
+
 const Navbar = () => {
+  const navigate = useNavigate();
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -13,17 +16,39 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const ComponentScroll = (id) => {
+    navigate("/");
+    setTimeout(() => {
+      const el = document.getElementById(id);
+      if (el) {
+        const yOffset = -90;
+        const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: "smooth" });
+      }
+    }, 100);
+  };
+
   return (
     <div className={`${classes.navbar} ${scrolled ? classes.sticky : ""}`}>
       <div className={classes.logo}>
         <img src={Llogo} alt="logo" />
       </div>
       <div className={classes.links}>
-        <a href="#home">home</a>
-        <a href="#about">about</a>
-        <a href="#about">skills</a>
-        <a href="#about">projects</a>
-        <a href="#about">contact</a>
+        <NavLink to="/" onClick={() => ComponentScroll("cover")}>
+          home
+        </NavLink>
+        <NavLink to="/" onClick={() => ComponentScroll("about")}>
+          about
+        </NavLink>
+        <NavLink to="/" onClick={() => ComponentScroll("skills")}>
+          skills
+        </NavLink>
+        <NavLink to="/" onClick={() => ComponentScroll("projects")}>
+          projects
+        </NavLink>
+        <NavLink to="/" onClick={() => ComponentScroll("contact")}>
+          Contact
+        </NavLink>
       </div>
     </div>
   );

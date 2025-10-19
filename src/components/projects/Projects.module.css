@@ -34,8 +34,34 @@
 .head .image img {
   width: 80%;
 }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  align-items: stretch;
+  padding: var(--section-padding);
+}
+@media (max-width: 992px) {
+.head {
+  position: relative;
+  background-color: var(--dark-color);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 150px 0 0;
+}
+}
 @media (max-width: 768px) {
+  .head {
+    flex-direction: column-reverse;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 100px 0 0;
+}
   .head .content h1 {
     margin-bottom: 2rem;
   }
+  .head .image img {
+  width: 50%;
+}
 }

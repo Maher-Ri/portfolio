@@ -1,5 +1,5 @@
 import classes from "./Container.module.css";
-const Container = (porps) => {
-  return <div className={classes.container}>{porps.children}</div>;
+const Container = (props) => {
+  return <div className={classes.container} id={props.id}>{props.children}</div>;
 };
 export default Container;
