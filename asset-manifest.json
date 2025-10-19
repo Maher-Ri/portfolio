@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.8c09f2ed.css",
-    "main.js": "/portfolio/static/js/main.a906be7a.js",
+    "main.css": "/portfolio/static/css/main.3453a4f8.css",
+    "main.js": "/portfolio/static/js/main.49496fd3.js",
     "static/js/787.8c61e351.chunk.js": "/portfolio/static/js/787.8c61e351.chunk.js",
     "static/media/MPC.png": "/portfolio/static/media/MPC.4106361f8198d6606377.png",
     "static/media/quarter.png": "/portfolio/static/media/quarter.98e8849d5de4df33937e.png",
     "static/media/layer1.jpg": "/portfolio/static/media/layer1.e8b3f1b8837436968922.jpg",
     "static/media/shop.png": "/portfolio/static/media/shop.d3ca817275fb73d93cb6.png",
+    "static/media/qrdi.png": "/portfolio/static/media/qrdi.dfcae4ae766660e38bf5.png",
     "static/media/book.png": "/portfolio/static/media/book.73bdd839fe0435a6038f.png",
     "static/media/profile.png": "/portfolio/static/media/profile.9f57a77e102657dba63a.png",
     "static/media/my-Image.jpg": "/portfolio/static/media/my-Image.15c501f4c87feb8c841e.jpg",
     "static/media/wave.png": "/portfolio/static/media/wave.ff4b80ca898e76da7c14.png",
-    "static/media/Fashion Fetish Bold.ttf": "/portfolio/static/media/Fashion Fetish Bold.f27d3702496c5ae2149c.ttf",
     "static/media/logo-light.png": "/portfolio/static/media/logo-light.ac60f2c812bc897891dd.png",
+    "static/media/projects-hero.svg": "/portfolio/static/media/projects-hero.bf760bb78a638a01bb2a8b0df9135c19.svg",
     "index.html": "/portfolio/index.html",
-    "main.8c09f2ed.css.map": "/portfolio/static/css/main.8c09f2ed.css.map",
-    "main.a906be7a.js.map": "/portfolio/static/js/main.a906be7a.js.map",
+    "main.3453a4f8.css.map": "/portfolio/static/css/main.3453a4f8.css.map",
+    "main.49496fd3.js.map": "/portfolio/static/js/main.49496fd3.js.map",
     "787.8c61e351.chunk.js.map": "/portfolio/static/js/787.8c61e351.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c09f2ed.css",
-    "static/js/main.a906be7a.js"
+    "static/css/main.3453a4f8.css",
+    "static/js/main.49496fd3.js"
   ]
 }
