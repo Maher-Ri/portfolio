@@ -2,14 +2,7 @@
   padding: var(--section-padding);
   background-color: var(--dark-color);
   color: var(--white-color);
-  text-align: center;
 }
-.subtitle {
-  font-size: 1rem;
-  color: var(--white-color);
-  margin-bottom: 3rem;
-}
-
 .container {
   display: flex;
   justify-content: center;
@@ -78,6 +71,12 @@
   text-align: left;
 }
 
+.info .subtitle {
+  font-size: 1.1rem;
+  color: var(--white-color);
+  margin-bottom: 0.75rem;
+  text-align: left;
+}
 .info a {
   color: var(--white-color);
   font-size: 1rem;
