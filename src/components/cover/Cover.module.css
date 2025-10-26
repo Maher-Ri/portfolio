@@ -75,7 +75,7 @@
   background: linear-gradient(90deg, var(--gray-color), var(--light-color));
   width: 200px;
   height: 200px;
-  bottom: -18px;
+  bottom: -15px;
   right: -20px;
   border-radius: var(--my-radius);
 }
