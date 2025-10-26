@@ -1,6 +1,8 @@
 import classes from "./About.module.css";
 import profile from "../../assets/profile.png";
-import Container from "../UI/Container"
+import Container from "../UI/Container";
+import { FaDownload } from "react-icons/fa";
+import Button from "../UI/Button";
 const AboutMe = () => {
   return (
     <Container>
@@ -40,10 +42,10 @@ const AboutMe = () => {
           />
         </div>
 
-        <button type="button">Download my CV</button>
+        <Button link="/assets/Maher-Al-Rifai-Resume.pdf" download>Download CV <FaDownload size={14}/></Button>
       </div>
       <div className={classes.profile}>
-        <img src={profile} alt="f" />
+        <img src={profile} alt="Maher Al Rifai" />
       </div>
     </articale>
     </Container>

@@ -25,7 +25,7 @@ const SideNav = () => {
     setTimeout(() => {
       const el = document.getElementById(id);
       if (el) {
-        const yOffset = -80;
+        const yOffset = -70;
         const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
         window.scrollTo({ top: y, behavior: "smooth" });
       }
@@ -36,7 +36,7 @@ const SideNav = () => {
     <>
       <div className={`${classes.navbar} ${scrolled ? classes.sticky : ""}`}>
         <div className={classes.logo}>
-          <img src={Llogo} alt="logo" />
+          <img src={Llogo} alt="Maher Al Rifai logo" />
         </div>
         <div className={classes.icon}>
           <FontAwesomeIcon

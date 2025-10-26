@@ -1,14 +1,16 @@
-import React from "react";
 import classes from "./ContactSection.module.css";
 import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from "react-icons/fa";
 import Container from "../UI/Container";
-import Title from "../UI/Title"
-
+import Title from "../UI/Title";
 const ContactSection = () => {
   return (
     <Container id="contact">
-      <section className={classes.contactSection} >
+      <section className={classes.contactSection}>
         <Title>Get in Touch</Title>
+        <p className={classes.subtitle}>
+          I’m open to freelance or full-time opportunities. Let’s create
+          something great together!
+        </p>
         <div className={classes.container}>
           <form className={classes.form}>
             <input type="text" placeholder="Your Name" required />
@@ -17,12 +19,8 @@ const ContactSection = () => {
             <button type="submit">Send Message</button>
           </form>
           <div className={classes.info}>
-                    <p className={classes.subtitle}>
-          I’m open to freelance or full-time opportunities. Let’s create
-          something great together!
-        </p>
-            <a href="mailto:your.email@example.com">
-              <FaEnvelope /> your.email@example.com
+            <a href="mailto:maher.refae15@gmail.com">
+              <FaEnvelope /> maher.refae15@gmail.com
             </a>
             <a href="tel:+96176511394">
               <FaPhone /> +961 76 511 394

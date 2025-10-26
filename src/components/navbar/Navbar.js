@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <div className={`${classes.navbar} ${scrolled ? classes.sticky : ""}`}>
       <div className={classes.logo}>
-        <img src={Llogo} alt="logo" />
+        <img src={Llogo} alt="Maher Al Rifai logo" />
       </div>
       <div className={classes.links}>
         <NavLink to="/" onClick={() => ComponentScroll("cover")}>
