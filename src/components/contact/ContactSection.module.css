@@ -22,23 +22,26 @@
   width: 100%;
   padding: 0.9rem 1rem;
   background: var(--dark-color);
-  border: 2px solid #444;
+  border: 1px solid #444;
   color: var(--light-color);
   font-size: 1rem;
   transition: all 0.3s ease;
   outline: none;
+  border-radius: var(--my-radius);
 }
 
 .form input::placeholder,
 .form textarea::placeholder {
   color: rgba(255, 255, 255, 0.6);
+  font-family: var(--title-font);
+  font-size: 0.8rem;
 }
 
 .form input:focus,
 .form textarea:focus {
   border-color: var(--light-color);
   background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 0 6px var(--light-color);
+  box-shadow: 0 0px 3px var(--light-color);
 }
 
 .form textarea {
@@ -49,9 +52,10 @@
   padding: 0.9rem;
   background: var(--light-color);
   color: var(--dark-color);
-  font-size: 1.05rem;
-  font-weight: 600;
+  font-size: 1.1rem;
+  font-weight: 500;
   border: none;
+  border-radius: var(--my-radius);
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -67,25 +71,41 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  text-align: left;
+  gap: 1.2rem;
+  font-size: 1rem;
+  background-image: url("../../assets/undraw_letter_ombg.svg");
+  background-position: right bottom;
+  background-size: contain;
+  background-size: 220px;
+  background-repeat: no-repeat;
 }
 
-.info .subtitle {
-  font-size: 1.1rem;
+.subtitle {
   color: var(--white-color);
-  margin-bottom: 0.75rem;
-  text-align: left;
+  margin-bottom: 1.5rem;
 }
 .info a {
   color: var(--white-color);
-  font-size: 1rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  transition: color 0.3s;
+  transition: all 0.4s;
+  position: relative;
+  width: fit-content;
 }
-
+.info a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--light-color);
+  transition: all 0.4s;
+}
+.info a:hover::after {
+  width: 100%;
+}
 .info a:hover {
   color: var(--light-color);
 }
@@ -93,7 +113,7 @@
 /* Responsive */
 @media (max-width: 992px) {
   .container {
-    gap: 3rem;
+    gap: 2rem;
   }
 }
 @media (max-width: 768px) {
@@ -104,8 +124,12 @@
   .form {
     width: 100%;
   }
+  .subtitle {
+    font-size: 14px;
+  }
   .info {
     width: 100%;
-    text-align: center;
+    font-size: 14px;
+    background-size: 100px;
   }
 }

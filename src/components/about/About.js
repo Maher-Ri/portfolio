@@ -3,7 +3,7 @@ import AboutMe from "./AboutMe";
 const About = () => {
   return (
     <section className={classes.about} id="about">
-      <AboutMe/>
+      <AboutMe />
     </section>
   );
 };

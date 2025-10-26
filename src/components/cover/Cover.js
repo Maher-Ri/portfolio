@@ -1,7 +1,8 @@
 import Arrows from "./Arrows";
 import classes from "./Cover.module.css";
 import myImage from "../../assets/my-Image.jpg";
-import { NavLink } from "react-router-dom";
+import Button from "../UI/Button";
+
 const Cover = () => {
   function handleImageMouseOver() {
     window.getSelection().removeAllRanges();
@@ -21,7 +22,7 @@ const Cover = () => {
         <div className={classes.content}>
           <h1>Maher Al Rifai</h1>
           <p>Front-end web developer, designer and overall good human. I enjoy working with people who care on projects that make me think.</p>
-        <NavLink to="/projects">view my projects</NavLink>
+        <Button link="/portfolio/projects">view my projects</Button>
         </div>
         </div>
     </div>

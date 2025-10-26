@@ -2,7 +2,7 @@
   background-color: var(--dark-color);
   color: var(--white-color);
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 2rem 0rem;
   border-top: 1px solid var(--light-color);
 }
 
@@ -21,10 +21,11 @@
 
 .social a:hover {
   color: var(--light-color);
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .copy {
-  font-size: 0.9rem;
-  color: var(--gray-color);
+  font-size: 0.8rem;
+  color: var(--white-color);
+  font-weight: 300;
 }

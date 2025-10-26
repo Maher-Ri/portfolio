@@ -1,5 +1,5 @@
 import classes from "./SingleProject.module.css";
-import github from "../../assets/github.png"
+import { FaGithub } from "react-icons/fa";
 const SingleProject = (props) => {
   return (
     <article className={classes.card}>
@@ -10,7 +10,6 @@ const SingleProject = (props) => {
           loading="lazy"
         />
       </div>
-
       <div className={classes.cardBody}>
         <h3 className={classes.cardTitle}>{props.project.title}</h3>
         <p className={classes.cardDesc}>{props.project.desc}</p>
@@ -21,28 +20,27 @@ const SingleProject = (props) => {
             </span>
           ))}
         </div>
-
         <p className={classes.impact}>
           <strong>Quality:</strong> {props.project.quality}
         </p>
 
         <div className={classes.links}>
-          
           <a
             href={props.project.demo}
             target="_blank"
             rel="noopener noreferrer"
             className={classes.linkButton}
-          ><span>
-            Live Demo &#9658;</span>
+          >
+            <span>Live Demo &#9658;</span>
           </a>
           <a
             href={props.project.github}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="View project code on GitHub"
             className={classes.gitButton}
           >
-            <img src={github} alt="github" width={36}/>
+            <FaGithub size={36} />
           </a>
         </div>
       </div>
