@@ -2,7 +2,7 @@ import classes from "./SideNav.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { NavLink, useNavigate } from "react-router-dom";
-import Llogo from "../../assets/logo-light.png";
+import logo from "../../assets/Maher-logo.png";
 import { useState, useEffect } from "react";
 
 const SideNav = () => {
@@ -36,7 +36,7 @@ const SideNav = () => {
     <>
       <div className={`${classes.navbar} ${scrolled ? classes.sticky : ""}`}>
         <div className={classes.logo}>
-          <img src={Llogo} alt="Maher Al Rifai logo" />
+          <img src={logo} alt="Maher Al Rifai logo" />
         </div>
         <div className={classes.icon}>
           <FontAwesomeIcon

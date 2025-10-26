@@ -22,7 +22,7 @@ const Cover = () => {
         <div className={classes.content}>
           <h1>Maher Al Rifai</h1>
           <p>Front-end web developer, designer and overall good human. I enjoy working with people who care on projects that make me think.</p>
-        <Button link="/portfolio/projects">view my projects</Button>
+        <Button link={`${process.env.PUBLIC_URL}/projects`}>view my projects</Button>
         </div>
         </div>
     </div>

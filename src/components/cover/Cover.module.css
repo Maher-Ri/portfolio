@@ -51,22 +51,22 @@
   z-index: 3;
   transition: 0.5s;
   border: 5px solid var(--dark-color);
-    border-radius: var(--my-radius);
+  border-radius: var(--my-radius);
+  background-color: var(--dark-color);
 }
 .cover .profile .image img:hover {
   transform: scale(1.05);
-
 }
 .cover .profile .image::before {
   content: "";
   position: absolute;
   z-index: 2;
   background: linear-gradient(90deg, var(--gray-color), var(--light-color));
-  width: 200px;
-  height: 200px;
-  top: -30px;
-  left: -30px;
-    border-radius: var(--my-radius);
+  width: 150px;
+  height: 150px;
+  top: -20px;
+  left: -20px;
+  border-radius: var(--my-radius);
 }
 .cover .profile .image::after {
   content: "";
@@ -75,9 +75,9 @@
   background: linear-gradient(90deg, var(--gray-color), var(--light-color));
   width: 200px;
   height: 200px;
-  bottom: -30px;
-  right: -30px;
-    border-radius: var(--my-radius);
+  bottom: -18px;
+  right: -20px;
+  border-radius: var(--my-radius);
 }
 .cover .content {
   color: var(--white-color);
@@ -95,8 +95,7 @@
   font-size: 18px;
 }
 .cover .content a {
-
-  margin-left: auto ;
+  margin-left: auto;
 }
 .cover .toRight {
   animation: toRight infinite ease-in-out;
@@ -151,7 +150,7 @@
   .cover .profile .image::after {
     width: 50%;
     height: 50%;
-    bottom: -15px;
+    bottom: -11px;
     right: -15px;
   }
 
@@ -190,14 +189,10 @@
   .cover .profile .image::before {
     width: 50%;
     height: 50%;
-    top: -15px;
-    left: -15px;
   }
   .cover .profile .image::after {
     width: 50%;
     height: 50%;
-    bottom: -15px;
-    right: -15px;
   }
   .cover .content {
     color: var(--white-color);
@@ -207,6 +202,6 @@
   }
   .cover .content p {
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 14px;
   }
 }

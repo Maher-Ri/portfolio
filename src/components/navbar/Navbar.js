@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import classes from "./Navbar.module.css";
-import Llogo from "../../assets/logo-light.png";
+import logo from "../../assets/Maher-logo.png";
 import { NavLink, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <div className={`${classes.navbar} ${scrolled ? classes.sticky : ""}`}>
       <div className={classes.logo}>
-        <img src={Llogo} alt="Maher Al Rifai logo" />
+        <img src={logo} alt="Maher Al Rifai logo" />
       </div>
       <div className={classes.links}>
         <NavLink to="/" onClick={() => ComponentScroll("cover")}>

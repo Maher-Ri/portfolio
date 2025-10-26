@@ -2,7 +2,7 @@
   display: none;
 }
 .navbar .logo img {
-  width: 150px;
+  width: 180px;
   display: block;
   margin: auto;
 }
@@ -14,7 +14,7 @@
   position: fixed;
   z-index: 9;
   height: 100vh;
-  width: 75%;
+  width: 100%;
   left: 0;
   top: 0;
   display: flex;
