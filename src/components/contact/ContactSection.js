@@ -26,14 +26,14 @@ const ContactSection = () => {
               <FaPhone /> +961 76 511 394
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/maher-al-rifai/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaLinkedin /> LinkedIn
             </a>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/Maher-Ri"
               target="_blank"
               rel="noopener noreferrer"
             >

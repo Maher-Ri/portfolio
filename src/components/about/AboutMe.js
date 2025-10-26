@@ -42,7 +42,7 @@ const AboutMe = () => {
           />
         </div>
 
-        <Button link="/assets/Maher-Al-Rifai-Resume.pdf" download>Download CV <FaDownload size={14}/></Button>
+        <Button link={`${process.env.PUBLIC_URL}/assets/Maher-Al-Rifai-Resume.pdf`} download>Download CV <FaDownload size={14}/></Button>
       </div>
       <div className={classes.profile}>
         <img src={profile} alt="Maher Al Rifai" />

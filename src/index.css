@@ -8,14 +8,15 @@
   --dBlue-color: #0c2544;
   --white-color: #fff;
   --gray-color: #3C4049;
-  --lblue-color: #2E719C;
-  --light-color: #80C6BE;
+  --lblue-color: #5884a7;
+  --light-color: #9ac2c1;
   --my-radius:8px;
   --side-padding: 5.2rem;
   --title-font: 'Poppins', 'Inter', sans-serif;
   --title-size: 2.5rem;
   --subTitle-size:1.5rem;
   --section-padding: 6.25rem 0px;
+  /* 9ac2c1 5884a7 636565 */
 }
 * {
   box-sizing: border-box;
