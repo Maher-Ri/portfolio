@@ -1,0 +1,89 @@
+.otherWork {
+  /* text-align: center; */
+  padding: var(--section-padding);
+  color: var(--white-color);
+}
+
+.otherWork h2 {
+    color: var(--light-color);
+    margin-bottom: 2.5rem;
+    text-transform:capitalize ;
+    font-size: var(--title-size);
+    font-weight: 500;
+}
+
+.otherWork p {
+  /* max-width: 700px; */
+  /* margin: 0 auto 3rem; */
+  /* line-height: 1.6; */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 2rem;
+}
+.grid .emailer {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  /* background-color: var(--light-color); */
+}
+.grid .emailer .image{
+  width: 200px;
+}
+.grid .emailer .image img{
+width: 100%;
+vertical-align: top;
+  border: var(--lblue-color) solid 1px;
+    border-radius: var(--my-radius);
+}
+.grid .emailer .content {
+  flex-grow: 1;
+}
+.grid .emailer .content h3,
+.grid .banners h3{
+  color: var(--lblue-color);
+}
+.grid .emailer .content{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+
+}
+.grid .emailer .content .tech{
+  display: flex;
+  gap: 1rem;
+}
+ .emailer .content .tech img{
+width: 45px;
+height: 45px;
+vertical-align: top;
+}
+.banners {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.banners img {
+  width: 100%;
+  border-radius: var(--my-radius);
+  border: 1px solid var(--lblue-color);
+}
+
+ p {
+  color: var(--white-color);
+  line-height: 1.5;
+}
+.banners .tech img {
+  width: 150px;
+  vertical-align: top;
+}
+.grid a {
+margin-left: auto;
+}
