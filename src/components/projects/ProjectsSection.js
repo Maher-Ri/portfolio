@@ -3,9 +3,10 @@ import clsx from "clsx";
 import Title from "../UI/Title";
 import SingleProject from "./SingleProject";
 import projects from "../../Data/ProjectsData";
-import EmailersTab from "./EmailersTab";
+import EmailersTab from "./OtherWorks";
 import classes from "./ProjectsSection.module.css";
 import Container from "../UI/Container";
+import OtherWork from "./OtherWorks";
 const ProjectsTabs = () => {
   const [activeTab, setActiveTab] = useState("react");
 
@@ -20,7 +21,7 @@ const ProjectsTabs = () => {
       <Container>
         <Title>Selected Projects</Title>
         {/* Tabs Navigation */}
-        <div className={classes.tabNav}>
+        {/* <div className={classes.tabNav}>
           {tabs.map((tab) => (
             <button
               key={tab.id}
@@ -33,10 +34,10 @@ const ProjectsTabs = () => {
               {tab.label}
             </button>
           ))}
-        </div>
+        </div> */}
 
         {/* Tabs Content */}
-        {activeTab === "react" && (
+
           <div className={classes.webProjects}>
             {/* <h2>WEB Projects</h2> */}
             <div className={classes.grid}>
@@ -45,9 +46,8 @@ const ProjectsTabs = () => {
               ))}
             </div>
           </div>
-        )}
-
-        {activeTab === "emailers" && <EmailersTab />}
+<OtherWork />
+        {/* {activeTab === "emailers" && <EmailersTab />}
 
         {activeTab === "banners" && (
           <section>
@@ -89,7 +89,7 @@ const ProjectsTabs = () => {
               ))}
             </div>
           </section>
-        )}
+        )} */}
       </Container>
     </section>
   );

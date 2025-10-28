@@ -2,7 +2,6 @@
     color: var(--light-color);
     margin-bottom: 2.5rem;
     text-transform:capitalize ;
-    /* text-align: center; */
     font-size: var(--title-size);
     font-weight: 500;
 }
