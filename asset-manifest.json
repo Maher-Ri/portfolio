@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.7f49e5c1.css",
-    "main.js": "/portfolio/static/js/main.15dd9fc7.js",
+    "main.css": "/portfolio/static/css/main.0c9f626a.css",
+    "main.js": "/portfolio/static/js/main.68854444.js",
     "static/js/787.8c61e351.chunk.js": "/portfolio/static/js/787.8c61e351.chunk.js",
     "static/media/MPC.png": "/portfolio/static/media/MPC.4106361f8198d6606377.png",
     "static/media/quarter.png": "/portfolio/static/media/quarter.98e8849d5de4df33937e.png",
@@ -13,15 +13,17 @@
     "static/media/my-Image.jpg": "/portfolio/static/media/my-Image.15c501f4c87feb8c841e.jpg",
     "static/media/wave.png": "/portfolio/static/media/wave.ff4b80ca898e76da7c14.png",
     "static/media/Maher-logo.png": "/portfolio/static/media/Maher-logo.fe1997a20c0d07627251.png",
+    "static/media/gwd-logo.png": "/portfolio/static/media/gwd-logo.6e70175963464dff42b2.png",
+    "static/media/litmus-logo.png": "/portfolio/static/media/litmus-logo.ec9700f9e14bad91896c.png",
     "static/media/undraw_letter_ombg.svg": "/portfolio/static/media/undraw_letter_ombg.0796c16702027ea8839d.svg",
     "static/media/projects-hero.svg": "/portfolio/static/media/projects-hero.bf760bb78a638a01bb2a8b0df9135c19.svg",
     "index.html": "/portfolio/index.html",
-    "main.7f49e5c1.css.map": "/portfolio/static/css/main.7f49e5c1.css.map",
-    "main.15dd9fc7.js.map": "/portfolio/static/js/main.15dd9fc7.js.map",
+    "main.0c9f626a.css.map": "/portfolio/static/css/main.0c9f626a.css.map",
+    "main.68854444.js.map": "/portfolio/static/js/main.68854444.js.map",
     "787.8c61e351.chunk.js.map": "/portfolio/static/js/787.8c61e351.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f49e5c1.css",
-    "static/js/main.15dd9fc7.js"
+    "static/css/main.0c9f626a.css",
+    "static/js/main.68854444.js"
   ]
 }
