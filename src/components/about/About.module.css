@@ -25,41 +25,11 @@
   justify-content: center;
   align-items: center;
   gap: 5rem;
-}
-/* 
-.aboutMe .profile {
-  position: relative;
-  max-width: 400px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  z-index: 2;
-}
-.aboutMe .profile::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-image: url("../../assets/wave.png");
-  width: 400px;
-  height: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.8;
-  z-index: 1;
-  animation: rotate 10s ease infinite;
-}
-.aboutMe .profile img {
-  width: 300px;
   position: relative;
   z-index: 2;
-} */
+}
 .aboutMe .text {
-  max-width: 400px;
+  max-width: 500px;
   position: relative;
   z-index: 2;
   display: flex;
@@ -78,15 +48,11 @@
   align-items: center;
   gap: 1rem;
 }
-@keyframes rotate {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(360deg);
+@media (max-width: 1200px) {
+  .aboutMe .text {
+    max-width: 400px;
   }
 }
-
 @media (max-width: 992px) {
   .aboutMe {
     flex-direction: column;
@@ -94,16 +60,6 @@
   }
   .about {
     text-align: center;
-  }
-  .aboutMe .profile {
-    max-width: 275px;
-  }
-  .aboutMe .profile::before {
-    width: 275px;
-    height: 275px;
-  }
-  .aboutMe .profile img {
-    width: 190px;
   }
   .aboutMe .text .skills {
     justify-content: center;

@@ -1,35 +1,36 @@
 .roadmap {
   position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 5rem 1.5rem;
-  z-index: 2;
+  flex-grow: 1;
+  text-align: start;
 }
 
 .title {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 4rem;
-  color: var(--white-color);
+/* font-size: var(--title-size); */
+  margin-bottom: 3rem;
+  color: var(--light-color);
+  padding-left: 2rem;
+  line-height: 26px;
 }
 
 .timeline {
   position: relative;
   margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .line {
   position: absolute;
-  left: 30px;
+  left: 0px;
   top: 0;
   bottom: 0;
   width: 2px;
   background: linear-gradient(
     to bottom,
+    var(--light-color),
     var(--lblue-color),
-    var(--dBlue-color),
-    var(--light-color)
+    var(--dBlue-color)
   );
   z-index: 0;
 }
@@ -40,7 +41,6 @@
   border: 1px solid var(--gray-color);
   border-radius: 12px;
   padding: 1.5rem 2rem;
-  margin-bottom: 3rem;
   color: var(--white-color);
   z-index: 1;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -49,23 +49,23 @@
 
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.25);
 }
 
 .icon {
   position: absolute;
-  left: -46px;
+  left: -50px;
   top: 20px;
   width: 36px;
   height: 36px;
-  background-color: var(--dBlue-color);
+  background-color: var(--lblue-color);
   color: var(--white-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1rem;
-  box-shadow: 0 0 0 3px var(--dark-color);
+  box-shadow: 0 0 0 5px var(--dark-color);
 }
 
 .content h3 {
@@ -78,13 +78,13 @@
 .content h4 {
   font-size: 1rem;
   font-weight: 500;
-  color: var(--gray-color);
+  color: #aaa;
   margin-bottom: 0.5rem;
 }
 
 .content p {
   font-size: 0.95rem;
-  color: #ccc;
+  color: var(--white-color);
   line-height: 1.5;
 }
 
@@ -94,22 +94,36 @@
   font-weight: 600;
   letter-spacing: 0.5px;
 }
-
+@media (max-width: 992px) {
+  .roadmap {
+    width: 100%;
+    flex-grow: initial;
+    margin-left: 18px;
+  }
+}
 /* Responsive */
 @media (max-width: 768px) {
+  .roadmap {
+    margin-left: 14px;
+  }
+  .title {
+  padding-left: 26px;
+  line-height: initial;
+  margin-bottom: 2rem;
+}
   .timeline {
-    margin-left: 1.5rem;
-  }
-
-  .line {
-    left: 20px;
-  }
-
-  .icon {
-    left: -36px;
+    gap: 2rem;
+    margin-left: 26px;
   }
 
   .card {
-    padding: 1.25rem 1.5rem;
+    padding: 1.25rem 1.25rem;
+  }
+  .icon {
+    left: -40px;
+    top: 20px;
+    width: 28px;
+    height: 28px;
+    box-shadow: 0 0 0 4px var(--dark-color);
   }
 }
