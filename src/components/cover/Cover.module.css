@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 5rem;
   overflow: hidden;
   margin-top: 90px;
 }
@@ -37,19 +38,25 @@
   position: relative;
   z-index: 3;
 }
-
-
 .cover .profile {
-  position: relative;
-  max-width: 400px;
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 2;
+}
+
+.cover .image {
+  position: relative;
+  /* max-width: 400px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: 2;
 }
-.cover .profile::before {
+.cover .image::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -70,48 +77,6 @@
   position: relative;
   z-index: 2;
 }
-/* .cover .profile .image {
-  width: 400px;
-  position: relative;
-  margin-left: auto;
-  margin-right: 30px;
-  z-index: 3;
-}
-.cover .profile img {
-  width: 100%;
-  max-width: 400px;
-  position: relative;
-  z-index: 3;
-  transition: 0.5s;
-  border: 5px solid var(--dark-color);
-  border-radius: var(--my-radius);
-  background-color: var(--dark-color);
-}
-.cover .profile .image img:hover {
-  transform: scale(1.05);
-}
-.cover .profile .image::before {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  background: linear-gradient(90deg, var(--gray-color), var(--light-color));
-  width: 150px;
-  height: 150px;
-  top: -20px;
-  left: -20px;
-  border-radius: var(--my-radius);
-}
-.cover .profile .image::after {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  background: linear-gradient(90deg, var(--gray-color), var(--light-color));
-  width: 200px;
-  height: 200px;
-  bottom: -15px;
-  right: -20px;
-  border-radius: var(--my-radius);
-} */
 .cover .content {
   color: var(--white-color);
   max-width: 400px;
@@ -176,25 +141,8 @@
     margin-top: 80px;
     padding: 50px var(--side-padding);
     flex-direction: column;
-    gap: 50px;
+    gap: 4rem;
   }
-  .cover .profile .image {
-    width: 85%;
-    max-width: 300px;
-  }
-  .cover .profile .image::before {
-    width: 50%;
-    height: 50%;
-    top: -15px;
-    left: -15px;
-  }
-  .cover .profile .image::after {
-    width: 50%;
-    height: 50%;
-    bottom: -11px;
-    right: -15px;
-  }
-
   .cover .content {
     color: var(--white-color);
     min-height: initial;
@@ -216,25 +164,21 @@
 @media (max-width: 768px) {
   .cover {
     padding: 50px var(--side-padding);
+    gap: 0rem;
   }
-
   .cover .content {
     width: 400px;
   }
 }
 @media (max-width: 576px) {
-  .cover .profile .image {
-    width: 85%;
-    max-width: 300px;
+  .cover .profile .image img{
+    max-width: 250px;
   }
   .cover .profile .image::before {
-    width: 50%;
-    height: 50%;
+  width: 350px;
+  height: 350px;
   }
-  .cover .profile .image::after {
-    width: 50%;
-    height: 50%;
-  }
+
   .cover .content {
     color: var(--white-color);
     max-width: initial;

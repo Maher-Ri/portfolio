@@ -42,12 +42,8 @@ const AboutMe = () => {
             width={50}
           />
         </div>
-
         <Button link={`${process.env.PUBLIC_URL}/assets/Maher-Al-Rifai-Resume.pdf`} download>Download CV <FaDownload size={14}/></Button>
       </div>
-      {/* <div className={classes.profile}>
-        <img src={profile} alt="Maher Al Rifai" />
-      </div> */}
       <Roadmap />
     </articale>
     </Container>
