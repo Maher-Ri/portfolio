@@ -47,7 +47,9 @@
   color: var(--white-color);
   box-shadow: 0 0px 4px rgba(255, 255, 255, 0.15);
 }
-
+.skillCard p{
+  color: inherit;
+}
 .visible {
   opacity: 1;
   transform: translateY(0);

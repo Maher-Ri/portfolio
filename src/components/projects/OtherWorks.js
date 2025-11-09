@@ -25,19 +25,6 @@ const OtherWork = () => {
       >
         Other Creative Work
       </motion.h2>
-
-      {/* <motion.p
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={fadeUp}
-        custom={0.2}
-      >
-        Beyond web development, I also craft responsive email templates and
-        promotional banners that blend design precision with clean, maintainable
-        code.
-      </motion.p> */}
-
       <div className={classes.grid}>
         <motion.div
           className={classes.emailer}
@@ -48,12 +35,15 @@ const OtherWork = () => {
           custom={0.4}
         >
           <div className={classes.image}>
-            <img
-              src={
-                "https://maher-ri.github.io/Email-templates/images/template-3.png"
-              }
-              alt="Responsive Email Template"
-            />
+            <a href="https://maher-ri.github.io/Email-templates/templates/template-3/index.html" target="_blank" rel="noreferrer">
+              <img
+                src={
+                  "https://maher-ri.github.io/Email-templates/images/template-3.png"
+                }
+                alt="Responsive Email Template"
+              />
+              <span className={classes.overlayBtn}>View Demo</span>
+            </a>
           </div>
           <div className={classes.content}>
             <h3>Email Templates</h3>
@@ -64,20 +54,19 @@ const OtherWork = () => {
               for consistent delivery and design accuracy.
             </p>
             <div className={classes.tech}>
-                            <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"
-                alt="HTML5 Logo" title="HTML5"
-              />
               <img
-                src={litmus}
-                alt="Litmus Logo" title="Litmus"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"
+                alt="HTML5 Logo"
+                title="HTML5"
               />
+              <img src={litmus} alt="Litmus Logo" title="Litmus" />
               <img
                 src="https://images.icon-icons.com/2407/PNG/512/mailchimp_icon_146054.png"
-                alt="Mailchimp Logo" title="Mailchimp"
+                alt="Mailchimp Logo"
+                title="Mailchimp"
               />
             </div>
-            <Button link={'https://maher-ri.github.io/Email-templates/'}>
+            <Button link={"https://maher-ri.github.io/Email-templates/"}>
               View Gallery
             </Button>
           </div>
@@ -99,17 +88,19 @@ const OtherWork = () => {
           />
           <h3>Animated Banners</h3>
           <p>
-I create lightweight, responsive HTML5 banners using Google Web Designer. Each banner features smooth animations, clear calls to action, and is optimized for fast loading and compatibility with major ad networks.
+            I create lightweight, responsive HTML5 banners using Google Web
+            Designer. Each banner features smooth animations, clear calls to
+            action, and is optimized for fast loading and compatibility with
+            major ad networks.
           </p>
- <div className={classes.tech}>
-                            <img
-                src={gwd}
-                alt="Google Web Designer Logo" title="Google Web Designer"
-              />
-              </div>
-            <Button link={''}>
-              View Gallery
-            </Button>
+          <div className={classes.tech}>
+            <img
+              src={gwd}
+              alt="Google Web Designer Logo"
+              title="Google Web Designer"
+            />
+            <Button link={""}>View Gallery</Button>
+          </div>
         </motion.div>
       </div>
     </section>
