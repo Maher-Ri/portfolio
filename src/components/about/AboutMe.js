@@ -1,8 +1,9 @@
 import classes from "./About.module.css";
-import profile from "../../assets/profile.png";
+// import profile from "../../assets/profile.png";
 import Container from "../UI/Container";
 import { FaDownload } from "react-icons/fa";
 import Button from "../UI/Button";
+import Roadmap from "./Roadmap";
 const AboutMe = () => {
   return (
     <Container>
@@ -44,9 +45,10 @@ const AboutMe = () => {
 
         <Button link={`${process.env.PUBLIC_URL}/assets/Maher-Al-Rifai-Resume.pdf`} download>Download CV <FaDownload size={14}/></Button>
       </div>
-      <div className={classes.profile}>
+      {/* <div className={classes.profile}>
         <img src={profile} alt="Maher Al Rifai" />
-      </div>
+      </div> */}
+      <Roadmap />
     </articale>
     </Container>
   );

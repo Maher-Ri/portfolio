@@ -1,36 +1,8 @@
-.tabNav {
-  display: flex;
-  justify-content: center;
-  margin: 0px 0px 2rem;
-  gap: 3rem;
-  border-bottom: 1px solid var(--light-color);
-  transition: all 0.3s;
+.projects {
+  /* background-color: var(--dBlue-color); */
+  padding: var(--section-padding);
+  padding-bottom: 0;
 }
-
-.tabNav .tabButton {
-  border: none;
-  background-color: var(--dark-color);
-  font-size: 1.1rem;
-  padding: 14px 8px;
-  cursor: pointer;
-  /* transition: all 0.3s; */
-  color: var(--white-color);
-  font-weight: 600;
-  width: 140px;
-}
-
-.tabNav .activeButton {
-  transition: color 0.3s;
-  color: var(--light-color);
-  border: 1px solid var(--light-color);
-  border-bottom: none;
-  transform: translateY(1px);
-}
-
-.tabNav .tabButton:hover {
-  color: var(--light-color);
-}
-
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -42,7 +14,11 @@
   font-size: var(--subTitle-size);
   margin-bottom: 2rem;
 }
+.webProjects > a{
+  margin: 2rem 0 0 auto;
+  display: block;
 
+}
 @media (max-width: 768px) {
   .tabNav {
     gap: initial;

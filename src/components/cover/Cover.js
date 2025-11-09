@@ -1,6 +1,7 @@
 import Arrows from "./Arrows";
 import classes from "./Cover.module.css";
-import myImage from "../../assets/my-Image.jpg";
+// import myImage from "../../assets/my-Image.jpg";
+import profile from "../../assets/profile.png";
 import Button from "../UI/Button";
 
 const Cover = () => {
@@ -10,13 +11,16 @@ const Cover = () => {
   return (
     <div className={classes.cover} id="cover" onMouseOver={handleImageMouseOver}>
       <Arrows />
-      <div className={classes.profile}>
+      {/* <div className={classes.profile}>
         <div className={classes.image}>
           <img 
           src={myImage}
             alt="Maher Al Rifai"
           />
         </div>
+      </div> */}
+            <div className={classes.profile}>
+        <img src={profile} alt="Maher Al Rifai" />
       </div>
       <div className={classes.intro}>
         <div className={classes.content}>

@@ -37,7 +37,40 @@
   position: relative;
   z-index: 3;
 }
-.cover .profile .image {
+
+
+.cover .profile {
+  position: relative;
+  max-width: 400px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.cover .profile::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../../assets/wave.png");
+  width: 400px;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  z-index: 1;
+  animation: rotate 10s ease infinite;
+}
+.cover .profile img {
+  width: 300px;
+  position: relative;
+  z-index: 2;
+}
+/* .cover .profile .image {
   width: 400px;
   position: relative;
   margin-left: auto;
@@ -78,7 +111,7 @@
   bottom: -15px;
   right: -20px;
   border-radius: var(--my-radius);
-}
+} */
 .cover .content {
   color: var(--white-color);
   max-width: 400px;
@@ -102,6 +135,14 @@
 }
 .cover .toLeft {
   animation: toLeft infinite ease-in-out;
+}
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 @keyframes toRight {
   0% {
