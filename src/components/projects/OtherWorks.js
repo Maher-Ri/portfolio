@@ -80,12 +80,12 @@ const OtherWork = () => {
           variants={fadeUp}
           custom={0.6}
         >
-          <img
+          {/* <img
             src={
               "https://blog.trafficshop.com/wp-content/uploads/2020/03/google-web-designer-2-1024x319.jpg"
             }
             alt="Marketing Banners"
-          />
+          /> */}
           <h3>Animated Banners</h3>
           <p>
             I create lightweight, responsive HTML5 banners using Google Web

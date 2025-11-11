@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5rem;
+  gap: 6rem;
   overflow: hidden;
   margin-top: 90px;
 }
@@ -49,7 +49,6 @@
 
 .cover .image {
   position: relative;
-  /* max-width: 400px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -143,6 +142,11 @@
     flex-direction: column;
     gap: 4rem;
   }
+  .cover .profile {
+  flex: initial;
+  align-items: center;
+  justify-content: flex-start;
+}
   .cover .content {
     color: var(--white-color);
     min-height: initial;
@@ -156,7 +160,6 @@
   .cover .content p {
     margin-bottom: 30px;
   }
-  .cover .profile .image,
   .cover .content a {
     margin: auto;
   }
@@ -164,7 +167,7 @@
 @media (max-width: 768px) {
   .cover {
     padding: 50px var(--side-padding);
-    gap: 0rem;
+    gap: 4rem;
   }
   .cover .content {
     width: 400px;
