@@ -44,7 +44,7 @@ const Cover = () => {
       <Arrows />
 
         <div className={classes.image}>
-          <img src={profile} alt="Maher Al Rifai" />
+          <img src={profile} alt="Maher Al Rifai" loading="lazy"/>
         </div>
 
       <div className={classes.intro}>
