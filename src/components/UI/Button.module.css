@@ -35,3 +35,9 @@
   width: 100%;
   transition: all 0.4s;
 }
+@media (max-width: 576px) {
+.button {
+  padding: 14px 20px;
+font-size: 14px;
+}
+}
