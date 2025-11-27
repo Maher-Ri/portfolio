@@ -1,11 +1,11 @@
 .cover {
   position: relative;
-  height: calc(100vh - 90px);
+  min-height: calc(100vh - 90px);
   background-color: var(--dark-color);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6rem;
+  gap: 5rem;
   overflow: hidden;
   margin-top: 90px;
 }
@@ -34,19 +34,9 @@
   opacity: 0.5;
 }
 .cover > div {
-  width: 50%;
   position: relative;
   z-index: 3;
 }
-.cover .profile {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  z-index: 2;
-}
-
 .cover .image {
   position: relative;
   display: flex;
@@ -56,28 +46,11 @@
   background-color: var(--dark-color);
   border: 1px solid var(--light-color);
   border-radius: var(--my-radius);
-  width: 350px;
+  width: 400px;
   overflow: hidden;
   box-shadow: rgba(154, 194, 193, 0.75) 0px 2px 8px 0px;
-
-  color: rgb(154, 194, 193, 0.2);
 }
-/* .cover .image::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-image: url("../../assets/wave.png");
-  width: 400px;
-  height: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.8;
-  z-index: 1;
-  animation: rotate 10s ease infinite;
-} */
+
 .cover .image::before {
   content: "";
   position: absolute;
@@ -95,7 +68,7 @@
   z-index: 1;
   animation: rotate 10s ease infinite;
 }
-.cover .profile img {
+.cover .image img {
   width: 100%;
   position: relative;
   z-index: 2;
@@ -103,12 +76,10 @@
 .cover .content {
   color: var(--white-color);
   max-width: 400px;
-  min-height: 400px;
-  padding: 10px;
 }
 .cover .content h1 {
   font-family: var(--title-font);
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
   font-size: var(--title-size);
 }
 .cover .content .typed {
@@ -117,7 +88,6 @@
   font-weight: 500;
 }
 .cover .content p {
-  /* margin-top: 0.5rem; */
   margin-bottom: 40px;
   font-size: 18px;
 }
@@ -169,22 +139,21 @@
 }
 @media (max-width: 992px) {
   .cover {
-    height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px);
     margin-top: 80px;
-    padding: 50px var(--side-padding);
+    padding: 1rem var(--side-padding) 50px;
     flex-direction: column;
-    gap: 4rem;
+    justify-content: center;
+    gap: 2rem;
   }
-  .cover .profile {
-    flex: initial;
-    align-items: center;
-    justify-content: flex-start;
+  .cover .image {
+    width: 300px;
   }
   .cover .content {
     color: var(--white-color);
     min-height: initial;
     padding: 10px;
-    width: 500px;
+    max-width: 500px;
     text-align: center;
   }
   .cover > div {
@@ -197,24 +166,10 @@
     margin: auto;
   }
 }
-@media (max-width: 768px) {
-  .cover {
-    padding: 50px var(--side-padding);
-    gap: 4rem;
-  }
-  .cover .content {
-    width: 400px;
-  }
-}
 @media (max-width: 576px) {
-  .cover .profile .image img {
-    max-width: 250px;
+  .cover .image {
+    max-width: 260px;
   }
-  .cover .profile .image::before {
-    width: 350px;
-    height: 350px;
-  }
-
   .cover .content {
     color: var(--white-color);
     max-width: initial;
@@ -225,7 +180,7 @@
     font-size: 1.25rem;
   }
   .cover .content p {
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
     font-size: 1rem;
   }
 }

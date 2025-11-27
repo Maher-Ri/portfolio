@@ -42,11 +42,11 @@ const Cover = () => {
       onMouseOver={handleImageMouseOver}
     >
       <Arrows />
-      <div className={classes.profile}>
+
         <div className={classes.image}>
           <img src={profile} alt="Maher Al Rifai" />
         </div>
-      </div>
+
       <div className={classes.intro}>
         <div className={classes.content}>
           <h1>Maher Al Rifai</h1>
