@@ -29,7 +29,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className={`${classes.navbar} ${scrolled ? classes.sticky : ""}`}>
+    <nav className={`${classes.navbar} ${scrolled ? classes.sticky : ""}`}>
       <div className={classes.logo}>
         <img src={logo} alt="Maher Al Rifai logo" />
       </div>
@@ -50,7 +50,7 @@ const Navbar = () => {
           Contact
         </NavLink>
       </div>
-    </div>
+    </nav>
   );
 };
 export default Navbar;

@@ -13,9 +13,9 @@ const ContactSection = () => {
         </p>
         <div className={classes.container}>
           <form className={classes.form}>
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <input type="text" placeholder="Your Name" required id="name"/>
+            <input type="email" placeholder="Your Email" required id="email"/>
+            <textarea placeholder="Your Message" rows="5" required id="message"></textarea>
             <button type="submit">Send Message</button>
           </form>
           <div className={classes.info}>
