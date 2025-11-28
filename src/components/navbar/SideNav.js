@@ -33,7 +33,7 @@ const SideNav = () => {
     setOpen(false);
   };
   return (
-    <>
+    <nav>
       <div className={`${classes.navbar} ${scrolled ? classes.sticky : ""}`}>
         <div className={classes.logo}>
           <img src={logo} alt="Maher Al Rifai logo" />
@@ -71,7 +71,7 @@ const SideNav = () => {
           Contact
         </NavLink>
       </div>
-    </>
+    </nav>
   );
 };
 export default SideNav;
