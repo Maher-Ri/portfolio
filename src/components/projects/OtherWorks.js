@@ -27,25 +27,14 @@ const OtherWork = () => {
       </motion.h2>
       <div className={classes.grid}>
         <motion.div
-          className={classes.emailer}
+          className={classes.box}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeUp}
           custom={0.4}
         >
-          <div className={classes.image}>
-            <a href="https://maher-ri.github.io/Email-templates/templates/template-3/index.html" target="_blank" rel="noreferrer">
-              <img
-                src={
-                  "https://maher-ri.github.io/Email-templates/images/template-3.png"
-                }
-                alt="Responsive Email Template"
-              />
-              <span className={classes.overlayBtn}>View Demo</span>
-            </a>
-          </div>
-          <div className={classes.content}>
+          <div className={classes.wrapper}>
             <h3>Email Templates</h3>
             <p>
               I design responsive HTML email templates that render flawlessly
@@ -64,42 +53,38 @@ const OtherWork = () => {
                 src="https://images.icon-icons.com/2407/PNG/512/mailchimp_icon_146054.png"
                 alt="Mailchimp Logo"
                 title="Mailchimp"
-              />
-            </div>
-            <Button link={"https://maher-ri.github.io/Email-templates/"}>
-              View Gallery
-            </Button>
+              /></div>
+              <Button link={"https://maher-ri.github.io/Email-templates/"}>
+                View Gallery
+              </Button>
+            
           </div>
         </motion.div>
 
         <motion.div
-          className={classes.banners}
+          className={classes.box}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeUp}
           custom={0.6}
         >
-          {/* <img
-            src={
-              "https://blog.trafficshop.com/wp-content/uploads/2020/03/google-web-designer-2-1024x319.jpg"
-            }
-            alt="Marketing Banners"
-          /> */}
-          <h3>Animated Banners</h3>
-          <p>
-            I create lightweight, responsive HTML5 banners using Google Web
-            Designer. Each banner features smooth animations, clear calls to
-            action, and is optimized for fast loading and compatibility with
-            major ad networks.
-          </p>
-          <div className={classes.tech}>
-            <img
-              src={gwd}
-              alt="Google Web Designer Logo"
-              title="Google Web Designer"
-            />
-            <Button link={""}>View Gallery</Button>
+          <div className={classes.wrapper}>
+            <h3>Animated Banners</h3>
+            <p>
+              I create lightweight, responsive HTML5 banners using Google Web
+              Designer. Each banner features smooth animations, clear calls to
+              action, and is optimized for fast loading and compatibility with
+              major ad networks.
+            </p>
+            <div className={classes.tech}>
+              <img
+                src={gwd}
+                alt="Google Web Designer Logo"
+                title="Google Web Designer"
+              /></div>
+              <Button link={""}>View Gallery</Button>
+            
           </div>
         </motion.div>
       </div>

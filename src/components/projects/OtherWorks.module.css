@@ -14,101 +14,48 @@
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   gap: 2rem;
 }
-.otherWork .emailer {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-}
-.grid .emailer .image {
-  max-width: 250px;
-}
-.grid .emailer .image a {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  border: 1px solid var(--lblue-color);
-  border-radius: var(--my-radius);
-  transition:all 0.3s ease;
-}
 
-.grid .emailer .image img {
-  width: 100%;
-  display: block;
-  transition: transform 0.4s ease;
-}
 
-/* Hover zoom effect */
-.grid .emailer .image a:hover::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(0, 0, 0, 0.8); 
-  z-index: 2;
-    transition:all 0.3s ease;
-}
-.grid .emailer .image:hover img {
-  transform: scale(1.05);
-}
-
-/* Overlay button */
-.grid .emailer .image .overlayBtn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: var(--lblue-color);
-  color: #fff;
-  padding: 0.6rem 1rem;
-  border-radius: var(--my-radius);
-  opacity: 0;
-  font-size: 0.8rem;
-  font-weight: 500;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  pointer-events: none;
-  z-index: 3;
-}
-
-/* Show on hover */
-.grid .emailer .image:hover .overlayBtn {
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
-  pointer-events: auto;
-}
-.grid .emailer .content {
-  flex: 1;
-}
-.grid .emailer .content h3,
-.grid .banners h3 {
+.grid .box h3 {
   color: var(--lblue-color);
   font-size: 1.5rem;
 }
-.grid .emailer .content,
-.grid .banners {
+.grid  .box {
+  position: relative;
+  border-radius: var(--my-radius);
+  padding: 3px;
+  z-index: 2;
+}
+.grid .box::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+background: #2A7B9B;
+background: linear-gradient(45deg,var(--lblue-color) 0%, var(--light-color) 50%, var(--gray-color) 100%);
+ border-radius: var(--my-radius);
+}
+.grid .box .wrapper {
+position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 1.25rem;
+   padding: 1.5rem;
+  background-color: #222222e3;
+  border-radius: var(--my-radius);
+  width: 100%;
+  height: 100%;
 }
-.grid .emailer .content .tech {
-  display: flex;
-  gap: 1rem;
-}
-.emailer .content .tech img {
+.grid .box .tech img {
   width: 45px;
   height: 45px;
   vertical-align: top;
 }
-
-.banners img {
-  width: 100%;
-  border-radius: var(--my-radius);
-  border: 1px solid var(--lblue-color);
-}
-
 .otherWork p {
   color: var(--white-color);
   line-height: 1.5;
