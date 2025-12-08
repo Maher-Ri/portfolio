@@ -1,7 +1,7 @@
 import Arrows from "./Arrows";
 import classes from "./Cover.module.css";
 // import myImage from "../../assets/my-Image.jpg";
-import profile from "../../assets/profile.png";
+import profile from "../../assets/profile.webp";
 import Button from "../UI/Button";
 import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
